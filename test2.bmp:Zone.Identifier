@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/97955c17-3e60-40ca-8a54-c160b8f9c53d/Game%20Over%20Screenshot.bmp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240126%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240126T185703Z&X-Amz-Expires=86400&X-Amz-Signature=4069870c63f5a0141c5c473030896775cce1c52ecfbc808209224104b49c596e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Game%20Over%20Screenshot.bmp%22&response-content-type=image%2Fbmp&x-id=GetObject
