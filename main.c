@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
+#include <string.h>
 
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
@@ -69,7 +70,6 @@ int main() {
 
           case SDL_KEYDOWN:
             switch(event.key.keysym.sym) {
-
               case SDLK_1:
                 current_image = image_surface1;
                 break;
@@ -78,6 +78,24 @@ int main() {
                 break;
               case SDLK_3:
                 current_image = image_surface3;
+                break;
+              default:
+                break;
+            }
+
+          case SDL_MOUSEBUTTONDOWN:
+            switch(event.button.button) {
+              case SDL_BUTTON_LEFT:
+                if (event.button.clicks == 2) {
+                  current_image = image_surface3;
+                  break;
+                }
+                current_image = image_surface1;
+                break;
+              case SDL_BUTTON_RIGHT:
+                current_image = image_surface2;
+                break;
+              default:
                 break;
             }
 
