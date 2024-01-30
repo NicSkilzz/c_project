@@ -5,6 +5,7 @@
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
 
+
 int main() {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         printf("SDL_Init Error: %s\n", SDL_GetError());
@@ -48,13 +49,7 @@ int main() {
       return 1;
     }
 
-    SDL_Surface * current_image = image_surface1;
-
-    /*
-    SDL_SetRenderDrawColor(renderer, 0, 0, 100, 255);
-    SDL_RenderClear(renderer);
-    SDL_RenderPresent(renderer);
-    */
+    SDL_Surface * current_image = window_surface;
 
     bool is_running = true;
     SDL_Event event;
